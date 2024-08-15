@@ -1,0 +1,54 @@
+layout {
+  pane
+  pane size=1 borderless=true {
+    plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
+      format_left                "{mode}#[bg=#45475a,fg=#bac2de] {session}#[fg=#45475a]"
+      format_center              "{tabs}"
+      format_right               "{datetime}"
+      format_space               ""
+
+      border_enabled             "false"
+      border_char                "-"
+      border_position            "top"
+
+      hide_frame_for_single_pane "false"
+
+      datetime                   "{format}"
+      datetime_format            "%A, %b %d %Y %H:%M"
+      datetime_timezone          "America/Los_Angeles"
+
+      format_hide_on_overlength  "true"
+      format_precedence          "lrc"
+
+      // formatting for inactive tabs
+      tab_normal                 "#[fg=#b4befe]#[fg=#11111b,bg=#b4befe]{index}#[fg=#bac2de,bg=#45475a] {name}#[fg=#45475a]"
+      tab_normal_fullscreen      "#[fg=#6C7086] {index} :: {name} [] "
+      tab_normal_sync            "#[fg=#6C7086] {index} :: {name} <> "
+      // formatting for the current active tab
+      tab_active                 "#[fg=#a6e3a1]#[fg=#11111b,bg=#a6e3a1,bold,italic]{index} {name} {floating_indicator}#[fg=#a6e3a1]#[fg=#a6e3a1]"
+      tab_active_fullscreen      "#[fg=#a6e3a1]#[fg=#11111b,bg=#a6e3a1,bold,italic]{index} {name} {fullscreen_indicator}#[fg=#a6e3a1]"
+      tab_active_sync            "#[fg=#a6e3a1]#[fg=#11111b,bg=#a6e3a1,bold,italic]{index} {name} {sync_indicator}#[fg=#a6e3a1]"
+
+      // separator between the tabs
+      tab_separator              " "
+
+      // format when renaming a tab
+      tab_rename                 "#[fg=#eba0ac,bg=#181825] {index} {name} {floating_indicator} "
+
+      // indicators
+      tab_sync_indicator         "<> "
+      tab_fullscreen_indicator   "[] "
+      tab_floating_indicator     "⬚ "
+
+      // limit tab display count
+      tab_display_count          "6"  // limit to showing 3 tabs
+      tab_truncate_start_format  "#[fg=red,bg=#181825] < +{count} ..."
+      tab_truncate_end_format    "#[fg=red,bg=#181825] ... +{count} >"
+
+      mode_normal        "#[fg=#89B4FA]#[bg=#89B4FA,fg=#11111b]{name}"
+      mode_locked        "#[fg=#f38ba8]#[bg=#f38ba8,fg=#11111b]{name}"
+      mode_pane          "#[fg=#f38ba8]#[bg=#f38ba8,fg=#11111b]{name}"
+      mode_tmux          "#[fg=#f5c2e7]#[bg=#f5c2e7,fg=#11111b]{name}"
+    }
+  }
+}
