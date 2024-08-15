@@ -5,3 +5,5 @@
 /zsh/.config/zsh/.zsh_sessions
 btop/.config/btop/btop.log
 kubectl/.kube/configs
+nvim/.config/nvim/lazyvim.json
+nvim/.config/nvim/lazy-lock.json
