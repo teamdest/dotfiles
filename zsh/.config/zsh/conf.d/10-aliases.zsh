@@ -1,3 +1,7 @@
+# Use neovim as the `vi-like` editor
+alias vim="nvim"
+alias vi="vim"
+
 # `dust``, `bat`, etc are modern substitutes for some common GNU tools. Usually the functionality is a superset of the original, though the behavior is not always identical.
 # That's why these are sourced in .zshrc for my interactive shells, but anything running automatically should continue to use `bat`, `grep`, etc.
 alias du="dust"
