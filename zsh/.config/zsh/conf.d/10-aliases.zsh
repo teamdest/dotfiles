@@ -26,3 +26,7 @@ alias g="lazygit"
 alias lg="lazygit"
 
 alias zj="zellij"
+
+# Aliases for the gitea CLI common actions
+alias t="tea"
+alias tic="t i c"
