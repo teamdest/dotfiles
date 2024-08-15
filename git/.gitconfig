@@ -3,6 +3,7 @@
 	email = teamdest@pbarletta.com
 
 [core]
+	pager = delta
 	excludesfile = /Users/pbarletta/.gitignore_global
 
 [commit]
@@ -16,6 +17,17 @@
 
 [init]
 	defaultBranch = main
+
+[interactive]
+  diffFilter = delta --color-only
+
+[include]
+	path = ~/.config/delta/themes.gitconfig 
+
+[delta]
+  features = catppuccin-mocha decorations
+	navigate = true
+
 [merge]
 	conflictstyle = diff3
 
