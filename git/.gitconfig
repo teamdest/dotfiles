@@ -1,0 +1,24 @@
+[user]
+	name = Patrick Barletta
+	email = teamdest@pbarletta.com
+
+[core]
+	excludesfile = /Users/pbarletta/.gitignore_global
+
+[commit]
+	template = /Users/pbarletta/.stCommitMsg
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
