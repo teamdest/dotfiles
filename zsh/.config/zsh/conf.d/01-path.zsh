@@ -6,6 +6,9 @@ path=(
   ${HOME}/.config/cargo/bin
   ${HOME}/.krew/bin
   /usr/local/{,s}bin(N)
+  /opt/{homebrew,local}/{,s}bin(N)
+  /opt/homebrew/opt/mysql-client/bin
+  /opt/homebrew/opt/coreutils/libexec/gnubin
   $path
 )
 
