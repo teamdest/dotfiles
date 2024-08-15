@@ -1,3 +1,5 @@
+# Choose which binary certain common commands or shortcuts will actually run
+
 # Use neovim as the `vi-like` editor
 alias vim="nvim"
 alias vi="vim"
