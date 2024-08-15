@@ -15,4 +15,8 @@ eval "$(zoxide init --cmd cd zsh)"
 alias l=ls
 alias la=ls
 
+# similarly, I don't like typing `lazygit` every time
+alias g="lazygit"
+alias lg="lazygit"
+
 alias zj="zellij"
