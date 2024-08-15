@@ -3,6 +3,7 @@
 	email = teamdest@pbarletta.com
 
 [core]
+	editor = nvim
 	pager = delta
 	excludesfile = /Users/pbarletta/.gitignore_global
 
