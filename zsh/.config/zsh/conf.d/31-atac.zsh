@@ -1,0 +1,2 @@
+export ATAC_MAIN_DIR=${XDG_CONFIG_HOME}/atac/
+
