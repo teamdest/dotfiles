@@ -30,9 +30,11 @@
 	navigate = true
 
 [merge]
-	conflictstyle = diff3
+  tool = vimdiff
+	conflictstyle = zdiff3
 
 [diff]
+  too = vimdiff
 	colorMoved = default
 
 [credential]
@@ -40,3 +42,8 @@
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[credential "https://git.blazenet.org"]
+  provider = generic
+
+[mergetool "vimdiff"]
+  cmd = nvimd -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
