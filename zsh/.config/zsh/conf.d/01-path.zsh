@@ -2,8 +2,8 @@
 path=(
   ${HOME}/{,s}bin(N)
   ${HOME}/.local/bin
-  ${HOME}/.config/rustup/bin
-  ${HOME}/.config/cargo/bin
+  ${XDG_CONFIG_HOME}/rustup/bin
+  ${XDG_CONFIG_HOME}/cargo/bin
   ${HOME}/.krew/bin
   /usr/local/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
