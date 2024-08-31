@@ -1,5 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "final_space": true,
+  "shell_integration": true,
+  "enable_cursor_positioning": true,
   "version": 2,
   "palettes": {
     "template": "Mocha",
