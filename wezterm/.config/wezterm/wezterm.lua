@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local config = {}
 
+config.default_prog = { "/opt/homebrew/bin/zellij", "attach", "-c", "macbook" }
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("FiraCode Nerd Font")
 config.enable_tab_bar = true

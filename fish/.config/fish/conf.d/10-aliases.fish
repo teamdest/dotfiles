@@ -14,8 +14,9 @@ alias top='btop'
 alias ls='eza -la --sort=name --smart-group --time-style=iso --git'
 
 # `zoxide` is a similar "substitute" command (replaces `cd`), however it has a more involved configuration that is handled through an `init` sub-command
-# the `--cmd` switch declares what command it is aliasing over, which is `cd` in this case.
-eval "$(zoxide init --cmd cd zsh)"
+# once initialized, zoxide defines a "z" command which we alias cd to
+zoxide init fish | source
+alias cd="z"
 
 # just some convenience for two common mis-types of `ls`
 alias l=ls
@@ -31,6 +32,6 @@ alias zj="zellij"
 alias t="tea"
 alias tic="t i c"
 
-alias ytdlbase="yt-dlp -o '%(title)s.%(ext)s' --cookies-from-browser 'firefox::Google' --extractor-args 'youtube:player-client=web;po_token=web+MlujUkDelo3Z9aNqPijhpD9h5ydOw5YOW3Qz_1BF_8dvEygpKXrLvfFOTZTW-YDFnhHrdoAlq_urJK6-34ocj3R-V4uqIlHnHXqHoGeF8nWLR-KtjnfBD_oWKghi'" 
+alias ytdlbase="yt-dlp -o '%(title)s.%(ext)s' --cookies-from-browser 'firefox::Google' --extractor-args 'youtube:player-client=web;po_token=web+MlujUkDelo3Z9aNqPijhpD9h5ydOw5YOW3Qz_1BF_8dvEygpKXrLvfFOTZTW-YDFnhHrdoAlq_urJK6-34ocj3R-V4uqIlHnHXqHoGeF8nWLR-KtjnfBD_oWKghi'"
 alias ytdl="ytdlbase --merge-output-format mp4 -f 'bv+ba'"
 alias ytcat="ytdlbase --merge-output-format mkv -f 'bv*[height<=1080][ext=mkv]+ba*[ext=mp3]'"

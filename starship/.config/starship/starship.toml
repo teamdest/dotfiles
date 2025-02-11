@@ -218,6 +218,7 @@ format = '\[[$symbol]($style)\]'
 format = '\[[$symbol]($style)\]'
 
 [kubernetes]
+disabled = false
 format = '\[[$symbol$context( \($namespace\))]($style)\]'
 
 [lua]
@@ -314,4 +315,4 @@ format = '\[[$symbol]($style)\]'
 format = '\[[$symbol]($style)\]'
 
 [solidity]
-format = '\[[$symbol]($style)\]'
+disabled = true
