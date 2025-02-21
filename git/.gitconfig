@@ -35,14 +35,17 @@
 
 [diff]
   too = vimdiff
-	colorMoved = default
-[credential "https://git.blazenet.org"]
-  provider = generic
+	colormoved = default
+  colormovedws = "allow-indentation-change"
 
 [mergetool "vimdiff"]
   cmd = nvimd -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
 [credential]
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
+	helper = git-credential-manager
+
+[credential "https://git.blazenet.org"]
+  provider = generic
+
 [credential "https://dev.azure.com"]
 	useHttpPath = true
