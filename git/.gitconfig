@@ -43,12 +43,7 @@
 
 [credential "https://github.com/teamdest"]
   useHttpPath = true
-  username = teamdest
 	helper = manager
-
-[credential "https://github.com/sncorp"]
-  useHttpPath = true
-  username = patrick.barletta@sncorp.com
 
 [credential "https://git.blazenet.org"]
   provider = generic
