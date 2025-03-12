@@ -41,8 +41,14 @@
 [mergetool "vimdiff"]
   cmd = nvimd -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 
-[credential]
-	helper = git-credential-manager
+[credential "https://github.com/teamdest"]
+  useHttpPath = true
+  username = teamdest
+	helper = manager
+
+[credential "https://github.com/sncorp"]
+  useHttpPath = true
+  username = patrick.barletta@sncorp.com
 
 [credential "https://git.blazenet.org"]
   provider = generic
