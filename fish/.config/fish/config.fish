@@ -1,18 +1,18 @@
 # set language
-set -Ux LANG en_US.UTF-8
-set -Ux LC_CTYPE en_US.UTF-8
+set -gx LANG en_US.UTF-8
+set -gx LC_CTYPE en_US.UTF-8
 
 # setup XDG directories
-set -Ux XDG_CONFIG_HOME $HOME/.config
-set -Ux XDG_DATA_HOME $HOME/.local/share
-set -Ux XDG_CACHE_HOME $HOME/.cache
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx XDG_CACHE_HOME $HOME/.cache
 
 # setup base dirs for tools
-set -Ux RUSTUP_HOME $XDG_CONFIG_HOME/rustup
-set -Ux CARGO_HOME $XDG_CONFIG_HOME/cargo
+set -gx RUSTUP_HOME $XDG_CONFIG_HOME/rustup
+set -gx CARGO_HOME $XDG_CONFIG_HOME/cargo
 
 # configure tokens/keys
-set -Ux SOPS_AGE_KEY_FILE $HOME/.config/age/age-personal
+set -gx SOPS_AGE_KEY_FILE $HOME/.config/age/age-personal
 
 if test -x /opt/homebrew/bin/brew
     # add env vars for homebrew
@@ -20,9 +20,9 @@ if test -x /opt/homebrew/bin/brew
 end
 
 # specify basic tools
-set -Ux VISUAL nvim
-set -Ux EDITOR nvim
-set -Ux PAGER bat
-set -Ux MANPAGER "sh -c 'col -bx | bat -l man -p'"
+set -gx VISUAL nvim
+set -gx EDITOR nvim
+set -gx PAGER bat
+set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 fish_vi_key_bindings
