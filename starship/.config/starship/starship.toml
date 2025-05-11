@@ -219,7 +219,7 @@ format = '\[[$symbol]($style)\]'
 
 [kubernetes]
 disabled = false
-format = '\[[$symbol$context( \($namespace\))]($style)\]'
+format = '\[[$symbol$context(:$namespace)]($style)\] '
 
 [lua]
 format = '\[[$symbol]($style)\]'
@@ -303,7 +303,7 @@ format = '\[[$symbol$workspace]($style)\]'
 format = '\[[$time]($style)\]'
 
 [username]
-format = '\[[$user]($style)\]'
+format = '[$user]($style)'
 
 [vagrant]
 format = '\[[$symbol]($style)\]'
