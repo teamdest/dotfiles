@@ -80,9 +80,9 @@ gui:
   # This can be toggled from within Lazygit with the '~' key, but that will not change the default.
   showFileTree: true
   # If true, show a random tip in the command log when Lazygit starts
-  showRandomTip: true
+  showRandomTip: false
   # If true, show the command log
-  showCommandLog: true
+  showCommandLog: false
   # If true, show the bottom line that contains keybinding info and useful buttons. If false, this line will be hidden except to display a loader for an in-progress action.
   showBottomLine: true
   # If true, show jump-to-window keybindings in window titles.
@@ -92,7 +92,7 @@ gui:
   # Nerd fonts version to use.
   # One of: '2' | '3' | empty string (default)
   # If empty, do not show icons.
-  nerdFontsVersion: ""
+  nerdFontsVersion: "3"
   # If true (default), file icons are shown in the file views. Only relevant if NerdFontsVersion is not empty.
   showFileIcons: true
   # Length of author name in (non-expanded) commits view. 2 means show initials only.
@@ -105,7 +105,7 @@ gui:
   showBranchCommitHash: false
   # Whether to show the divergence from the base branch in the branches view.
   # One of: 'none' | 'onlyArrow'  | 'arrowAndNumber'
-  showDivergenceFromBaseBranch: none
+  showDivergenceFromBaseBranch: arrowAndNumber
   # Height of the command log view
   commandLogSize: 8
   # Whether to split the main window when viewing file changes.
