@@ -1,17 +1,17 @@
 layout {
   pane
-  pane size=1 borderless=true {
+  pane size=2 borderless=true {
     plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
       format_left                "{mode}#[bg=#45475a,fg=#bac2de] {session}#[fg=#45475a]"
       format_center              "{tabs}"
       format_right               "{datetime}"
       format_space               ""
 
-      border_enabled             "false"
+      border_enabled             "true"
       border_char                "-"
       border_position            "top"
 
-      hide_frame_for_single_pane "false"
+      hide_frame_for_single_pane "true"
 
       datetime                   "{format}"
       datetime_format            "%A, %b %d %Y %H:%M"
@@ -41,7 +41,7 @@ layout {
       tab_floating_indicator     "⬚ "
 
       // limit tab display count
-      tab_display_count          "6"  // limit to showing 3 tabs
+      tab_display_count          "6"
       tab_truncate_start_format  "#[fg=red,bg=#181825] < +{count} ..."
       tab_truncate_end_format    "#[fg=red,bg=#181825] ... +{count} >"
 
