@@ -2,32 +2,26 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin",
     },
   },
   {
-    "folke/tokyonight.nvim",
-    enabled = false,
-  },
-  {
-    "catppuccin/nvim",
-    lazy = true,
-    name = "catppuccin",
+    "catppuccin",
     opts = {
-      flavor = "mocha",
+      function()
+        local bufferline = require("catppuccin.groups.integrations.bufferline")
+        bufferline.get = bufferline.get or bufferline.get_theme
+      end,
       transparent_background = true,
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+      float = {
+        transparent = true, -- enable transparent floating windows
       },
-      show_end_of_buffer = true,
-      term_colors = true,
       dim_inactive = {
-        enabled = false,
+        enabled = true, -- dims the background color of inactive window
         shade = "dark",
-        percentage = 0.35, -- percentage of the shade to apply to the inactive window
+        percentage = 0.15, -- percentage of the shade to apply to the inactive window
       },
+      auto_integrations = true,
     },
   },
 }
