@@ -32,6 +32,6 @@ alias zj="zellij"
 alias t="tea"
 alias tic="t i c"
 
-alias ytdlbase="yt-dlp -o '%(title)s.%(ext)s' --cookies-from-browser 'firefox::Google' --extractor-args 'youtube:player-client=web;po_token=web+MlujUkDelo3Z9aNqPijhpD9h5ydOw5YOW3Qz_1BF_8dvEygpKXrLvfFOTZTW-YDFnhHrdoAlq_urJK6-34ocj3R-V4uqIlHnHXqHoGeF8nWLR-KtjnfBD_oWKghi'"
+alias ytdlbase="yt-dlp -o '%(title)s.%(ext)s' --cookies-from-browser 'firefox::Google'"
 alias ytdl="ytdlbase --merge-output-format mp4 -f 'bv+ba'"
 alias ytcat="ytdlbase --merge-output-format mkv -f 'bv*[height<=1080][ext=mkv]+ba*[ext=mp3]'"
