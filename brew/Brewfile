@@ -73,6 +73,7 @@ cask "digikam"
 cask "discord"
 cask "dupeguru"
 cask "freac"
+cask "firefox"
 cask "git-credential-manager"
 cask "handbrake"
 cask "iina"
@@ -107,7 +108,6 @@ cask "wezterm"
 cask "xnviewmp"
 cask "zenmap"
 cask "zotero"
-cask "librewolf", args: { no_quarantine: true }
 mas "Goodnotes", id: 1444383602
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "SonicWall Mobile Connect", id: 822514576
