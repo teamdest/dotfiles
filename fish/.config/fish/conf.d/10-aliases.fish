@@ -11,7 +11,7 @@ alias cat="bat"
 alias grep="rg"
 alias find="fd"
 alias top='btop'
-alias ls='eza -la --sort=name --smart-group --time-style=iso --git'
+alias ls='eza --long --all --sort=name --smart-group --time-style=iso --git'
 
 # `zoxide` is a similar "substitute" command (replaces `cd`), however it has a more involved configuration that is handled through an `init` sub-command
 # once initialized, zoxide defines a "z" command which we alias cd to
