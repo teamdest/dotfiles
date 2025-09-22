@@ -43,12 +43,7 @@
 [mergetool "vimdiff"]
   cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 
-[credential "https://github.com/teamdest"]
-  useHttpPath = true
-	helper = manager
-
-[credential "https://git.blazenet.org"]
-  provider = generic
-
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+[credential]
+  helper = manager
+	helper = osxkeychain
+	helper = oauth
