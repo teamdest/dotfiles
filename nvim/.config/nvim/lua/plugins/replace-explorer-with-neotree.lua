@@ -26,6 +26,7 @@ return {
           hide_dotfiles = false,
           hide_gitignored = false,
           never_show = {
+            ".git",
             "DS_Store",
             "thumbs.db",
           },
