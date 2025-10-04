@@ -1,6 +1,6 @@
 [user]
 	name = Patrick Barletta
-	email = teamdest@pbarletta.com
+	email =
 
 [core]
 	editor = nvim
@@ -44,8 +44,7 @@
   cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 
 [credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
-	helper = osxkeychain
+	helper = /usr/local/bin/git-credential-manager
 
 [credential "https://dev.azure.com"]
 	useHttpPath = true
