@@ -11,7 +11,7 @@ if not set -q ZELLIJ
         if test "$LC_TERMINAL" = ShellFish
             zellij attach -c ipad
         else
-            zellij attach -c macbook
+            zellij attach -c main
         end
     else
         zellij
