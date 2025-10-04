@@ -1,6 +1,0 @@
-mattmc3/zephyr path:plugins/completion
-mattmc3/zephyr path:plugins/history
-atuinsh/atuin
-zsh-users/zsh-autosuggestions
-zpm-zsh/clipboard
-zdharma-continuum/fast-syntax-highlighting
