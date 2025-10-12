@@ -22,5 +22,4 @@ set -gx PAGER bat
 set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 fish_vi_key_bindings
-fish_config theme save "Catppuccin Mocha"
-
+fish_config theme choose "Catppuccin Mocha"
