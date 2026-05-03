@@ -42,7 +42,8 @@
 
 [mergetool "vimdiff"]
   cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-
+[credential "https://git.blazenet.org"]
+	provider = generic
 [credential]
 	helper = git-credential-manager
 [credential "https://dev.azure.com"]
