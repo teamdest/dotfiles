@@ -5,10 +5,10 @@
 [core]
 	editor = nvim
 	pager = delta
-	excludesfile = /Users/pbarletta/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 [commit]
-	template = /Users/pbarletta/.stCommitMsg
+	template = ~/.stCommitMsg
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
