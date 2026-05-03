@@ -44,7 +44,6 @@
   cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 
 [credential]
-	helper = /usr/local/bin/git-credential-manager
-
+	helper = git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
