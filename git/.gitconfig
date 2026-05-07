@@ -54,3 +54,6 @@
 
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+
+[credential "https://codeberg.org"]
+	provider = generic
