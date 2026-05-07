@@ -10,6 +10,9 @@
 [commit]
 	template = ~/.stCommitMsg
 
+[fetch]
+  prune = true
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -42,9 +45,12 @@
 
 [mergetool "vimdiff"]
   cmd = nvim -d $LOCAL $BASE $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
+[credential]
+	helper = !git-credential-manager
+
 [credential "https://git.blazenet.org"]
 	provider = generic
-[credential]
-	helper = git-credential-manager
+
 [credential "https://dev.azure.com"]
 	useHttpPath = true
